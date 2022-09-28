@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:wght@200;300;400;&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Muli';
+  background-color: #852a48;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 70rem;
+}
+.user-form input {
+  width: 100%;
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  background-color: #ca426f;
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  margin-bottom: 3rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+.user-form input::placeholder {
+  color: #fff;
+}
+.user-form input:focus {
+  outline: none;
+}
+.card {
+  background-color: #287a85;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
+}
+.avatar {
+  border-radius: 50%;
+  border: 0.5rem solid coral;
+  height: 15rem;
+  width: 15rem;
+}
+.user-info {
+  color: #eee;
+  margin-left: 3.6rem;
+}
+.user-info h2 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+.user-info p,
+.user-info ul {
+  font-size: 1.5rem;
+}
+.user-info ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 40rem;
+}
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+.user-info ul li strong {
+  margin-left: 0.5rem;
+}
+.repo {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2a2a72;
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1.6rem;
+  padding: 0.35rem 1.2rem;
+  display: inline-block;
+}
+
+@media (max-width: 50rem) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-form {
+    max-width: 40px;
+  }
+  .user-form input {
+    width: 50rem;
+  }
+}
